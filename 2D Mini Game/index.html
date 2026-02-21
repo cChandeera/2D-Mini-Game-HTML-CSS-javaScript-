@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+        <title>2D Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body class="body" onkeyup="m(event);" >
+<!-- Background -->
+    <div class="background" id="background">
+       
+       <div class="score" id="score">0</div>
+      
+       <img src="Run (1).png" class="boy" id="boy" onclick="test();"/>
+<!-- Game Over Box -->
+       <div class="gameOver" id="gameOver">
+
+         <div class="text1"></div>
+         <div class="text2" id="text2">YOUR SCORE</div>
+         <button class="button" onclick="reload();"></button>
+         <div class="text3" id="text3"></div>
+
+       </div>
+<!-- Start Box -->
+       <div class="startbox" id="startbox">
+          <div class="instruction" id="instruction">
+            <div><img src="flash2.jpg"  class="name"></div>
+            <div> <img src="Idle (1).png" id="idle" class="idle"></div>        
+            <div class="text4">press 'ENTER' to START</div>
+            <div class="text5">press 'SPACE' to JUMP</div>
+            <div class="fire"></div>
+          </div>
+       </div> 
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
